@@ -6,37 +6,49 @@
 //const inter = Inter({ subsets: ['latin'] })
 
 import React, { useEffect, useState, useRef } from 'react'
+import UploadFrom from './uploadform'
+export default function Index() {
+  return (
+    <div>
+      <UploadForm/> 
+    </div>
+  );
+};
 
-export default function VirtualView(){
+function VirtualView(props){
   
+  const { virtualAddressSpace } = props;
+  if (virtualAddressSpace == []){
+    return;
+  }
   const [ zoom, setZoom] = useState(114);
   const [innerWidth, setInnerWidth] = useState(0);
   const [blocks_to_render, setBlocksToRender] = useState([]);
   const parentDivRef = useRef(null);
-  const totalAddressSpace = 0xffffffff+1;
-  const virtualAddressSpace = [
+  const totalAddressSpace = 0xffffffff+1; // use round numbers
+  let virtualAddressSpace2 = [
     {
       region: "Stack",
       color: "blue",
-      startAddress: 0x00001000,
-      endAddress: 0x0006000,
+      startAddress: "0x00001000",
+      endAddress: "0x0006000",
       description: "Thread stack space"
     },
     {
       region: "Heap",
       color: "green",
-      startAddress: 0x00010000,
-      endAddress: 0x00029000,
+      startAddress: "0x00010000",
+      endAddress: "0x00029000",
       description: "Dynamic memory allocation"
     },
     {
       region: "Image",
       color: "red",
-      startAddress: 0x0030000,
-      endAddress: 0x0040000,
+      startAddress: "0x0030000",
+      endAddress: "0x0040000",
       description: "DLL"
     }
-  ];
+  ]
 
   useEffect(() => {
 
@@ -62,7 +74,7 @@ export default function VirtualView(){
     
   };
 
-  
+
 
   //onZoomChange = (event) => {
   //  this.setState({ zoom: event.target.value });
@@ -73,12 +85,12 @@ export default function VirtualView(){
     let blocks_to_render = [];
     for (let i = 0; i < virtualAddressSpace.length; i++) {
       if (start < virtualAddressSpace[i].startAddress) {
-        blocks.push({
+        /*blocks.push({
           region: "Free Space",
           color: "pink",
           startAddress: start,
           endAddress: virtualAddressSpace[i].startAddress
-        });
+        });*/
       }
       blocks.push(virtualAddressSpace[i]);
       start = virtualAddressSpace[i].endAddress;
@@ -93,7 +105,7 @@ export default function VirtualView(){
   }*/
 
     
-    const pageWidth = innerWidth-1;
+    const pageWidth = innerWidth-1; // avoid the edge by 1px
     let widthRemaining = pageWidth;
     for (let block of blocks) {
       let blockWidth =
@@ -107,6 +119,7 @@ export default function VirtualView(){
       b.width = Math.min(widthRemaining, blockWidth);
       b.height = 20 * (zoom / 100);
       b.color = block.color;
+      b.image = block.image;
       blockWidth -= b.width;
       widthRemaining -= b.width;
       
@@ -121,6 +134,7 @@ export default function VirtualView(){
         b.height =
           Math.floor(blockWidth / pageWidth) * 20 * (zoom / 100);
         b.color = block.color;
+        b.image = block.image;
         blocks_to_render.push(b);
         blockWidth -= pageWidth * Math.floor(blockWidth / pageWidth);
     }
@@ -133,6 +147,7 @@ export default function VirtualView(){
       b.width = blockWidth;
       b.height = 20 * (zoom / 100);
       b.color = block.color;
+      b.image = block.image;
       widthRemaining -= b.width;
       blocks_to_render.push(b);
     }
@@ -143,11 +158,22 @@ export default function VirtualView(){
   if (blocks_to_render == []){
     calculateBlocks();
   }
+
+  function handleMouseMove(event){
+    const hoveredDiv = event.target;
+    const parent = hoveredDiv.parentNode;
+    const divs = Array.from(parent.childNodes);
+    const index = divs.indexOf(hoveredDiv);
+
+    console.log(`The index of the hovered div is: ${index}`);
+  };
+
   function renderBlock(zoom, block, index) {
     let ret = (
       <div
         className="memory-block"
         key={index}
+        onMouseMove={handleMouseMove}
         style={{
           backgroundColor: block.color,
           width: block.width,
@@ -156,6 +182,7 @@ export default function VirtualView(){
           boxShadow: "0px 0px 0px 1px black inset"
         }}
       >
+        <pre>{block.image}</pre>
       </div>
     );
     return ret;
@@ -170,7 +197,7 @@ export default function VirtualView(){
       //border: '1px solid black'
     }}
     >
-      <div className="test">Zoom is: {zoom}</div>
+      <div className="test">Zoom i: {zoom}</div>
       <div className="test">innerWidth is: {innerWidth}</div>
       <div className="zoom-slider">
         <input
@@ -189,8 +216,18 @@ export default function VirtualView(){
           renderBlock(zoom, block, index)
         )}
       </div>
+      <div style={{ 
+          position: "fixed",
+          bottom: "0",
+          left: "0",
+          width: "100%",
+          backgroundColor: "white",
+          padding: "10px",
+          textAlign: "center"
+          }}>
+            hello
+          {/*this.state.currentHover*/}
+        </div>
     </div>
   );
-}
-
-
+};

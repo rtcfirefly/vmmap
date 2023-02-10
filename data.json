@@ -1,0 +1,32 @@
+{ 
+    "data": [
+    {
+      "region": "Stack",
+      "color": "blue",
+      "startAddress": "0x00001000",
+      "endAddress": "0x0006000",
+      "description": "Thread stack space"
+    },
+    {
+      "region": "Heap",
+      "color": "green",
+      "startAddress": "0x00010000",
+      "endAddress": "0x00029000",
+      "description": "Dynamic memory allocation"
+    },
+    {
+      "region": "Image",
+      "color": "red",
+      "startAddress": "0x0030000",
+      "endAddress": "0x0040000",
+      "description": "DLL"
+    },
+    {
+        "region": "Heap",
+        "color": "green",
+        "startAddress": "0x00050000",
+        "endAddress": "0x00060000",
+        "description": "Dynamic memory allocation"
+      }
+  ]
+}

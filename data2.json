@@ -1,0 +1,472 @@
+{
+    "data": [
+        {
+            "startAddress": "0x00400000",
+            "endAddress": "0x008bb000",
+            "permissions": "r-xp",
+            "offset": "00000000",
+            "device": "08:01",
+            "inode": "6617",
+            "image": "/usr/bin/python3.8"
+        },
+        {
+            "startAddress": "0x008ca000",
+            "endAddress": "0x008cb000",
+            "permissions": "r--p",
+            "offset": "004ba000",
+            "device": "08:01",
+            "inode": "6617",
+            "image": "/usr/bin/python3.8"
+        },
+        {
+            "startAddress": "0x008cb000",
+            "endAddress": "0x00910000",
+            "permissions": "rw-p",
+            "offset": "004bb000",
+            "device": "08:01",
+            "inode": "6617",
+            "image": "/usr/bin/python3.8"
+        },
+        {
+            "startAddress": "0x00910000",
+            "endAddress": "0x00933000",
+            "permissions": "rw-p",
+            "offset": "00000000",
+            "device": "00:00",
+            "inode": "0",
+            "image": null
+        },
+        {
+            "startAddress": "0x1d183000",
+            "endAddress": "0x1d244000",
+            "permissions": "rw-p",
+            "offset": "00000000",
+            "device": "00:00",
+            "inode": "0",
+            "image": "[heap]"
+        },
+        {
+            "startAddress": "0xffff819d4000",
+            "endAddress": "0xffff819e3000",
+            "permissions": "r-xp",
+            "offset": "00000000",
+            "device": "08:01",
+            "inode": "21916",
+            "image": "/usr/lib/python3.8/lib-dynload/_json.cpython-38-aarch64-linux-gnu.so"
+        },
+        {
+            "startAddress": "0xffff819e3000",
+            "endAddress": "0xffff819f2000",
+            "permissions": "---p",
+            "offset": "0000f000",
+            "device": "08:01",
+            "inode": "21916",
+            "image": "/usr/lib/python3.8/lib-dynload/_json.cpython-38-aarch64-linux-gnu.so"
+        },
+        {
+            "startAddress": "0xffff819f2000",
+            "endAddress": "0xffff819f3000",
+            "permissions": "r--p",
+            "offset": "0000e000",
+            "device": "08:01",
+            "inode": "21916",
+            "image": "/usr/lib/python3.8/lib-dynload/_json.cpython-38-aarch64-linux-gnu.so"
+        },
+        {
+            "startAddress": "0xffff819f3000",
+            "endAddress": "0xffff819f4000",
+            "permissions": "rw-p",
+            "offset": "0000f000",
+            "device": "08:01",
+            "inode": "21916",
+            "image": "/usr/lib/python3.8/lib-dynload/_json.cpython-38-aarch64-linux-gnu.so"
+        },
+        {
+            "startAddress": "0xffff819f4000",
+            "endAddress": "0xffff81c59000",
+            "permissions": "rw-p",
+            "offset": "00000000",
+            "device": "00:00",
+            "inode": "0",
+            "image": null
+        },
+        {
+            "startAddress": "0xffff81c59000",
+            "endAddress": "0xffff81c8b000",
+            "permissions": "r--p",
+            "offset": "00000000",
+            "device": "08:01",
+            "inode": "28908",
+            "image": "/usr/lib/locale/C.UTF-8/LC_CTYPE"
+        },
+        {
+            "startAddress": "0xffff81c8b000",
+            "endAddress": "0xffff81f71000",
+            "permissions": "r--p",
+            "offset": "00000000",
+            "device": "08:01",
+            "inode": "3457",
+            "image": "/usr/lib/locale/locale-archive"
+        },
+        {
+            "startAddress": "0xffff81f71000",
+            "endAddress": "0xffff81f73000",
+            "permissions": "rw-p",
+            "offset": "00000000",
+            "device": "00:00",
+            "inode": "0",
+            "image": null
+        },
+        {
+            "startAddress": "0xffff81f73000",
+            "endAddress": "0xffff81f8c000",
+            "permissions": "r-xp",
+            "offset": "00000000",
+            "device": "08:01",
+            "inode": "9229",
+            "image": "/usr/lib/aarch64-linux-gnu/libz.so.1.2.11"
+        },
+        {
+            "startAddress": "0xffff81f8c000",
+            "endAddress": "0xffff81f9b000",
+            "permissions": "---p",
+            "offset": "00019000",
+            "device": "08:01",
+            "inode": "9229",
+            "image": "/usr/lib/aarch64-linux-gnu/libz.so.1.2.11"
+        },
+        {
+            "startAddress": "0xffff81f9b000",
+            "endAddress": "0xffff81f9c000",
+            "permissions": "r--p",
+            "offset": "00018000",
+            "device": "08:01",
+            "inode": "9229",
+            "image": "/usr/lib/aarch64-linux-gnu/libz.so.1.2.11"
+        },
+        {
+            "startAddress": "0xffff81f9c000",
+            "endAddress": "0xffff81f9d000",
+            "permissions": "rw-p",
+            "offset": "00019000",
+            "device": "08:01",
+            "inode": "9229",
+            "image": "/usr/lib/aarch64-linux-gnu/libz.so.1.2.11"
+        },
+        {
+            "startAddress": "0xffff81f9d000",
+            "endAddress": "0xffff81f9f000",
+            "permissions": "rw-p",
+            "offset": "00000000",
+            "device": "00:00",
+            "inode": "0",
+            "image": null
+        },
+        {
+            "startAddress": "0xffff81f9f000",
+            "endAddress": "0xffff81fc3000",
+            "permissions": "r-xp",
+            "offset": "00000000",
+            "device": "08:01",
+            "inode": "6058",
+            "image": "/usr/lib/aarch64-linux-gnu/libexpat.so.1.6.11"
+        },
+        {
+            "startAddress": "0xffff81fc3000",
+            "endAddress": "0xffff81fd3000",
+            "permissions": "---p",
+            "offset": "00024000",
+            "device": "08:01",
+            "inode": "6058",
+            "image": "/usr/lib/aarch64-linux-gnu/libexpat.so.1.6.11"
+        },
+        {
+            "startAddress": "0xffff81fd3000",
+            "endAddress": "0xffff81fd5000",
+            "permissions": "r--p",
+            "offset": "00024000",
+            "device": "08:01",
+            "inode": "6058",
+            "image": "/usr/lib/aarch64-linux-gnu/libexpat.so.1.6.11"
+        },
+        {
+            "startAddress": "0xffff81fd5000",
+            "endAddress": "0xffff81fd6000",
+            "permissions": "rw-p",
+            "offset": "00026000",
+            "device": "08:01",
+            "inode": "6058",
+            "image": "/usr/lib/aarch64-linux-gnu/libexpat.so.1.6.11"
+        },
+        {
+            "startAddress": "0xffff81fd6000",
+            "endAddress": "0xffff8206e000",
+            "permissions": "r-xp",
+            "offset": "00000000",
+            "device": "08:01",
+            "inode": "76485",
+            "image": "/usr/lib/aarch64-linux-gnu/libm-2.31.so"
+        },
+        {
+            "startAddress": "0xffff8206e000",
+            "endAddress": "0xffff8207e000",
+            "permissions": "---p",
+            "offset": "00098000",
+            "device": "08:01",
+            "inode": "76485",
+            "image": "/usr/lib/aarch64-linux-gnu/libm-2.31.so"
+        },
+        {
+            "startAddress": "0xffff8207e000",
+            "endAddress": "0xffff8207f000",
+            "permissions": "r--p",
+            "offset": "00098000",
+            "device": "08:01",
+            "inode": "76485",
+            "image": "/usr/lib/aarch64-linux-gnu/libm-2.31.so"
+        },
+        {
+            "startAddress": "0xffff8207f000",
+            "endAddress": "0xffff82080000",
+            "permissions": "rw-p",
+            "offset": "00099000",
+            "device": "08:01",
+            "inode": "76485",
+            "image": "/usr/lib/aarch64-linux-gnu/libm-2.31.so"
+        },
+        {
+            "startAddress": "0xffff82080000",
+            "endAddress": "0xffff82082000",
+            "permissions": "r-xp",
+            "offset": "00000000",
+            "device": "08:01",
+            "inode": "76499",
+            "image": "/usr/lib/aarch64-linux-gnu/libutil-2.31.so"
+        },
+        {
+            "startAddress": "0xffff82082000",
+            "endAddress": "0xffff82092000",
+            "permissions": "---p",
+            "offset": "00002000",
+            "device": "08:01",
+            "inode": "76499",
+            "image": "/usr/lib/aarch64-linux-gnu/libutil-2.31.so"
+        },
+        {
+            "startAddress": "0xffff82092000",
+            "endAddress": "0xffff82093000",
+            "permissions": "r--p",
+            "offset": "00002000",
+            "device": "08:01",
+            "inode": "76499",
+            "image": "/usr/lib/aarch64-linux-gnu/libutil-2.31.so"
+        },
+        {
+            "startAddress": "0xffff82093000",
+            "endAddress": "0xffff82094000",
+            "permissions": "rw-p",
+            "offset": "00003000",
+            "device": "08:01",
+            "inode": "76499",
+            "image": "/usr/lib/aarch64-linux-gnu/libutil-2.31.so"
+        },
+        {
+            "startAddress": "0xffff82094000",
+            "endAddress": "0xffff82097000",
+            "permissions": "r-xp",
+            "offset": "00000000",
+            "device": "08:01",
+            "inode": "76484",
+            "image": "/usr/lib/aarch64-linux-gnu/libdl-2.31.so"
+        },
+        {
+            "startAddress": "0xffff82097000",
+            "endAddress": "0xffff820a6000",
+            "permissions": "---p",
+            "offset": "00003000",
+            "device": "08:01",
+            "inode": "76484",
+            "image": "/usr/lib/aarch64-linux-gnu/libdl-2.31.so"
+        },
+        {
+            "startAddress": "0xffff820a6000",
+            "endAddress": "0xffff820a7000",
+            "permissions": "r--p",
+            "offset": "00002000",
+            "device": "08:01",
+            "inode": "76484",
+            "image": "/usr/lib/aarch64-linux-gnu/libdl-2.31.so"
+        },
+        {
+            "startAddress": "0xffff820a7000",
+            "endAddress": "0xffff820a8000",
+            "permissions": "rw-p",
+            "offset": "00003000",
+            "device": "08:01",
+            "inode": "76484",
+            "image": "/usr/lib/aarch64-linux-gnu/libdl-2.31.so"
+        },
+        {
+            "startAddress": "0xffff820a8000",
+            "endAddress": "0xffff820c2000",
+            "permissions": "r-xp",
+            "offset": "00000000",
+            "device": "08:01",
+            "inode": "76495",
+            "image": "/usr/lib/aarch64-linux-gnu/libpthread-2.31.so"
+        },
+        {
+            "startAddress": "0xffff820c2000",
+            "endAddress": "0xffff820d2000",
+            "permissions": "---p",
+            "offset": "0001a000",
+            "device": "08:01",
+            "inode": "76495",
+            "image": "/usr/lib/aarch64-linux-gnu/libpthread-2.31.so"
+        },
+        {
+            "startAddress": "0xffff820d2000",
+            "endAddress": "0xffff820d3000",
+            "permissions": "r--p",
+            "offset": "0001a000",
+            "device": "08:01",
+            "inode": "76495",
+            "image": "/usr/lib/aarch64-linux-gnu/libpthread-2.31.so"
+        },
+        {
+            "startAddress": "0xffff820d3000",
+            "endAddress": "0xffff820d4000",
+            "permissions": "rw-p",
+            "offset": "0001b000",
+            "device": "08:01",
+            "inode": "76495",
+            "image": "/usr/lib/aarch64-linux-gnu/libpthread-2.31.so"
+        },
+        {
+            "startAddress": "0xffff820d4000",
+            "endAddress": "0xffff820d8000",
+            "permissions": "rw-p",
+            "offset": "00000000",
+            "device": "00:00",
+            "inode": "0",
+            "image": null
+        },
+        {
+            "startAddress": "0xffff820d8000",
+            "endAddress": "0xffff82232000",
+            "permissions": "r-xp",
+            "offset": "00000000",
+            "device": "08:01",
+            "inode": "76483",
+            "image": "/usr/lib/aarch64-linux-gnu/libc-2.31.so"
+        },
+        {
+            "startAddress": "0xffff82232000",
+            "endAddress": "0xffff82242000",
+            "permissions": "---p",
+            "offset": "0015a000",
+            "device": "08:01",
+            "inode": "76483",
+            "image": "/usr/lib/aarch64-linux-gnu/libc-2.31.so"
+        },
+        {
+            "startAddress": "0xffff82242000",
+            "endAddress": "0xffff82246000",
+            "permissions": "r--p",
+            "offset": "0015a000",
+            "device": "08:01",
+            "inode": "76483",
+            "image": "/usr/lib/aarch64-linux-gnu/libc-2.31.so"
+        },
+        {
+            "startAddress": "0xffff82246000",
+            "endAddress": "0xffff82248000",
+            "permissions": "rw-p",
+            "offset": "0015e000",
+            "device": "08:01",
+            "inode": "76483",
+            "image": "/usr/lib/aarch64-linux-gnu/libc-2.31.so"
+        },
+        {
+            "startAddress": "0xffff82248000",
+            "endAddress": "0xffff8224b000",
+            "permissions": "rw-p",
+            "offset": "00000000",
+            "device": "00:00",
+            "inode": "0",
+            "image": null
+        },
+        {
+            "startAddress": "0xffff8224b000",
+            "endAddress": "0xffff8226c000",
+            "permissions": "r-xp",
+            "offset": "00000000",
+            "device": "08:01",
+            "inode": "76477",
+            "image": "/usr/lib/aarch64-linux-gnu/ld-2.31.so"
+        },
+        {
+            "startAddress": "0xffff8226d000",
+            "endAddress": "0xffff8226f000",
+            "permissions": "rw-p",
+            "offset": "00000000",
+            "device": "00:00",
+            "inode": "0",
+            "image": null
+        },
+        {
+            "startAddress": "0xffff82273000",
+            "endAddress": "0xffff8227a000",
+            "permissions": "r--s",
+            "offset": "00000000",
+            "device": "08:01",
+            "inode": "76749",
+            "image": "/usr/lib/aarch64-linux-gnu/gconv/gconv-modules.cache"
+        },
+        {
+            "startAddress": "0xffff8227a000",
+            "endAddress": "0xffff8227b000",
+            "permissions": "r--p",
+            "offset": "00000000",
+            "device": "00:00",
+            "inode": "0",
+            "image": "[vvar]"
+        },
+        {
+            "startAddress": "0xffff8227b000",
+            "endAddress": "0xffff8227c000",
+            "permissions": "r-xp",
+            "offset": "00000000",
+            "device": "00:00",
+            "inode": "0",
+            "image": "[vdso]"
+        },
+        {
+            "startAddress": "0xffff8227c000",
+            "endAddress": "0xffff8227d000",
+            "permissions": "r--p",
+            "offset": "00021000",
+            "device": "08:01",
+            "inode": "76477",
+            "image": "/usr/lib/aarch64-linux-gnu/ld-2.31.so"
+        },
+        {
+            "startAddress": "0xffff8227d000",
+            "endAddress": "0xffff8227f000",
+            "permissions": "rw-p",
+            "offset": "00022000",
+            "device": "08:01",
+            "inode": "76477",
+            "image": "/usr/lib/aarch64-linux-gnu/ld-2.31.so"
+        },
+        {
+            "startAddress": "0xfffff3a8d000",
+            "endAddress": "0xfffff3aae000",
+            "permissions": "rw-p",
+            "offset": "00000000",
+            "device": "00:00",
+            "inode": "0",
+            "image": "[stack]"
+        }
+    ]
+}
