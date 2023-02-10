@@ -5,11 +5,18 @@ interface Props {
 export default function VirtualView(props: any) {
   const { virtualAddressSpace } = props;
   const [zoom, setZoom] = useState(114);
-  const [hoverContents, setHoverContents] = useState({});
+  const [hoverContents, setHoverContents] = useState({block:{}});
 
   const [innerWidth, setInnerWidth] = useState(0);
-  const [blocks_to_render, setBlocksToRender] = useState([]);
-  const parentDivRef = useRef(null);
+  const [blocks_to_render, setBlocksToRender] = 
+    useState<Array<{
+      width: number;
+      height: number;
+      color: string;
+      image: any;
+      block: any;
+    }>>([]);
+  const parentDivRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function calculateBlocks() {
@@ -38,8 +45,8 @@ export default function VirtualView(props: any) {
   }*/
       // vvar (Virtual Variable) is a region of virtual memory that is used to store per-cpu variables and other miscellaneous kernel data structures that are required to be accessible at a fixed virtual address.
       // vsdo (Virtual System Data Objects) is a region of virtual memory that is used to store system-level data objects that need to be shared across all tasks, including the system call table, the idt (Interrupt Descriptor Table), and other similar data structures.
-
-      const colorLookup = {
+      type ColorLookup = Record<string, string>;
+      const colorLookup:ColorLookup = {
         "Free Space": "grey",
         "[stack]": "rgba(255,192,130,255)",
         "[heap]": "rgba(255,150,102,255)",
@@ -59,7 +66,8 @@ export default function VirtualView(props: any) {
           calculateWidth(block.startAddress, block.endAddress) * (zoom / 100);
         // create the initial block to
         // fill the remainder of the screen of just the block width
-        let color = colorLookup[block.image] || "rgba(211,160,255,255)"; //"rgba(177,214,255,255)";
+        let blockImage:string = block.image;
+        let color = colorLookup.hasOwnProperty(blockImage) ? colorLookup[blockImage] : "rgba(211,160,255,255)"; //"rgba(177,214,255,255)";
         let b = {
           width: Math.min(widthRemaining, blockWidth),
           height: 20 * (zoom / 100),
@@ -129,11 +137,11 @@ export default function VirtualView(props: any) {
     return <div key="empty" />;
   }
 
-  const handleZoomChange = (event) => {
+  const handleZoomChange = (event:any) => {
     setZoom(event.target.value);
   };
 
-  function handleMouseMove(event) {
+  function handleMouseMove(event:any) {
     const hoveredDiv = event.target;
     const parent = hoveredDiv.parentNode;
     const divs = Array.from(parent.childNodes);
